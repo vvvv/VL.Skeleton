@@ -1,0 +1,137 @@
+!SceneAsset
+Id: 5c529a5d-6972-4be3-b623-b7ab2a5b4e8d
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 203241b7-e78b-4f23-91a9-1da8e1efc0b3
+        - ref!! 6ea5106a-4516-472e-85f9-922e18085cb5
+        - ref!! 8b3c6060-998b-4aa2-949f-3b0027e8bc8b
+        - ref!! 53a7a075-179e-4e53-b93a-00770c62aeb3
+        - ref!! bdb64d7c-b88f-4d24-80f5-58a596a0850c
+        - ref!! 71893d3a-e2a2-41fb-9c9d-c9ca140fd698
+    Parts:
+        -   Entity:
+                Id: 203241b7-e78b-4f23-91a9-1da8e1efc0b3
+                Name: Camera
+                Components:
+                    7e1231b8398e470abfd2bdb87b6feadb: !TransformComponent
+                        Id: e6972544-0cee-49d0-9372-627189c88934
+                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
+                        Rotation: {X: 0.0, Y: 0.829037547, Z: 0.0, W: 0.5591929}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    68c6cacb6a3c41ed4e55e97301090dd4: !CameraComponent
+                        Id: 1e5bc7f8-7d3a-44d5-97ab-b419ea0dc90a
+                        Name: null
+                        Projection: Perspective
+                        Slot: aa128668-ed3d-40f7-93f6-7307315b0352
+                    9d6d73f99196f6561377453afea7a379: !KinetBonesTest.BasicCameraController,KinetBonesTest
+                        Id: 722465f0-7282-46c4-8a77-8a04fc9c59af
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+        -   Entity:
+                Id: 53a7a075-179e-4e53-b93a-00770c62aeb3
+                Name: AnimationV2
+                Components:
+                    a3a1f618bd4d4e922e13c1e21934c29a: !TransformComponent
+                        Id: 591e2841-966f-4443-a79c-5adbfdafccb1
+                        Position: {X: -1.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    4256ab248da785fcdc3c986664d3d070: !ModelComponent
+                        Id: 99df7421-8ba1-4df2-8936-4718c76ffe1a
+                        Model: 443f38b4-02a0-44ff-9a94-3ea7356ca5f3:Animations/AnimationV2
+                        Materials: {}
+                    82dfdcb647dd5f0ed5796b402ab5cfcb: !KinetBonesTest.AnimationStart,KinetBonesTest
+                        Id: d353ab64-4f27-4a46-9a9e-ca87b2d25d9c
+                        Animations:
+                            d5ad75bf67710e1f3b05c7a88fcdc030:
+                                Clip: 22ade051-6e77-4acf-b93c-7502b0dd0ed4:Animations/AnimationV2_2
+                                BlendOperation: LinearBlend
+                                StartTime: 0.0
+        -   Entity:
+                Id: 6ea5106a-4516-472e-85f9-922e18085cb5
+                Name: Directional light
+                Components:
+                    c93b94199368b493e4c6ada7be16a7ee: !TransformComponent
+                        Id: dce33622-62bc-4892-98f1-f63cb125ec09
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 1.131334E-08, Y: -0.9659258, Z: -0.258819044, W: -4.222196E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5759518d8cb03d9f1bf0270017b9abce: !LightComponent
+                        Id: 8dea12b6-f7e8-463c-b265-872060aa6346
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 20.0
+        -   Entity:
+                Id: 71893d3a-e2a2-41fb-9c9d-c9ca140fd698
+                Name: Ground
+                Components:
+                    1ff01247f964d46fe3052809b21dc5e8: !TransformComponent
+                        Id: dd8e6840-f86f-453f-b080-642b86375edb
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b8d21b93c0ebd0e6d9425e9ae76cde97: !ModelComponent
+                        Id: 5f775ffa-16b6-4538-941b-d70adfaec808
+                        Model: 7cdc505d-46a4-4e2a-ab9c-998d677908dc:Ground
+                        Materials: {}
+        -   Entity:
+                Id: 8b3c6060-998b-4aa2-949f-3b0027e8bc8b
+                Name: Skybox
+                Components:
+                    60c13557aa26b2d594b58f61e169c860: !TransformComponent
+                        Id: 824ce702-9e93-4ed0-b548-855e8aa2c6ca
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f59e949c972b13245b5eefdb382fc4b5: !BackgroundComponent
+                        Id: 532397db-bd53-4b13-b117-4529e937080c
+                        Texture: 6e145324-2c60-4f95-b5a2-75a8eacfbbee:Skybox texture
+                    f929426abf5144c5951f966d75782c8a: !LightComponent
+                        Id: a17050bc-94f4-4939-b7b5-21712371ff6f
+                        Type: !LightSkybox
+                            Skybox: 326961b8-c36d-409d-913a-63246f44424f:Skybox
+        -   Entity:
+                Id: bdb64d7c-b88f-4d24-80f5-58a596a0850c
+                Name: StartPose
+                Components:
+                    cb91aadeed176bb7be86e7b0883eef3a: !TransformComponent
+                        Id: c0ba48cf-dab9-43de-bbdf-48338cf172ff
+                        Position: {X: 1.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f69716f0427551cea7ffd3897bb0a86e: !ModelComponent
+                        Id: 33a1cdde-334b-4c11-9c2b-61d731bf52b4
+                        Model: b0e14c97-5872-401e-bad7-1808d7fbe78b:Models/StartPose
+                        Materials: {}
+                    00e9226482cd08ad1327989164198017: !KinetBonesTest.AnimationStart,KinetBonesTest
+                        Id: d037b1b9-c4fa-40b5-be1f-d6eb348514a0
+                        Animations:
+                            07c8ae1a4ed0481cc28d39e92cf8dce7:
+                                Clip: 22ade051-6e77-4acf-b93c-7502b0dd0ed4:Animations/AnimationV2_2
+                                BlendOperation: LinearBlend
+                                StartTime: 16.0

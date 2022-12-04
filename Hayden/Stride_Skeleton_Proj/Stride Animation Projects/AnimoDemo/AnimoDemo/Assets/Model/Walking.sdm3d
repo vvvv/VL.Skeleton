@@ -1,0 +1,20 @@
+!Model
+Id: e7c2b968-b3b2-4323-a1b1-afb44ba41cb6
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Assets/Walking.dae
+Skeleton: 8fcee06e-0ac8-4801-9f92-05aadd09c6f8:Model/Walking Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    aa85a2c1d9914d48c501db71de58b3b1:
+        Name: Beta_Joints_MAT
+        MaterialInstance:
+            Material: null
+    c9459ba6c8ec36f65d250b8eb9736cd9:
+        Name: asdf1_Beta_HighLimbsGeoSG2
+        MaterialInstance:
+            Material: null
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    de6bbc22f105d6c925118e99615788ce~../../../../../Assets/Walking.dae: 027a40bcb58e8beb4417948183c5e985

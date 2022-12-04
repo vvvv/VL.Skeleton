@@ -1,0 +1,15 @@
+!Model
+Id: 443f38b4-02a0-44ff-9a94-3ea7356ca5f3
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../RawAssets/KinectSkeletonBasic/AnimationV2.fbx
+Skeleton: 3e5bdd2d-ea3a-4208-ba43-9b5857ce29e3:Animations/AnimationV2 Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    bbe28a9a4638d76b6a162b9a238d3564:
+        Name: Material
+        MaterialInstance:
+            Material: null
+Modifiers: {}
+~SourceHashes:
+    66fa7045ba302a0e545bd76b804cd399~../RawAssets/KinectSkeletonBasic/AnimationV2.fbx: 7fe40f6e27d9a649d6a2682b634641fb

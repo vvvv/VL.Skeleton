@@ -1,0 +1,8 @@
+!Texture
+Id: 6671bc7f-95a3-4a61-a521-7a6c9059d2e5
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file Models/sourceimages/hair_01_SPEC.tga
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+    PremultiplyAlpha: false
