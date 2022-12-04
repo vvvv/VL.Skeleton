@@ -168,7 +168,7 @@
                 <Patch Id="IrmfmpJlmBlMb3iiLIJ8qt" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="ObwIy0xECJbPbC3wT2HJg2" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="398,506,307,19" Id="HLeDgvDErgoL3BHDHzjja6">
-                  <p:NodeReference LastCategoryFullName="Main.SetupUpdater" LastSymbolSource="Test.vl">
+                  <p:NodeReference LastCategoryFullName="Main.SetupUpdater" LastSymbolSource="VL.Skeleton test patch.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="CreateSkeletonUpdater" />
                   </p:NodeReference>
@@ -446,7 +446,7 @@
                           </p:TypeAnnotation>
                         </Pad>
                         <Node Bounds="1551,891,68,19" Id="DLxksXSFx7dPW5vuzJ885V">
-                          <p:NodeReference LastCategoryFullName="Main.StrideBones.Utilities.StrideTransformation" LastSymbolSource="StrideBoneTransformingUtil2.vl">
+                          <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Skeleton test patch.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="TRS2Matrix" />
                           </p:NodeReference>
@@ -631,7 +631,7 @@
               </Patch>
             </Node>
             <Node Bounds="398,439,98,19" Id="HKQYEnUVu5POmjUUFNHK3r">
-              <p:NodeReference LastCategoryFullName="Main.SetupUpdater" LastSymbolSource="Test.vl">
+              <p:NodeReference LastCategoryFullName="Main.SetupUpdater" LastSymbolSource="VL.Skeleton test patch.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="GetModelSkeleton" />
               </p:NodeReference>
@@ -2000,7 +2000,7 @@
                     <Pin Id="GCuV62LcPMQM1LwVPMwAJt" Name="Result" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="383,1431,118,19" Id="Ckz1RDk6cteN6xeGP3GBhA">
-                    <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="Test.vl">
+                    <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Skeleton test patch.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="ToQuaternionMirrored" />
                     </p:NodeReference>
@@ -2052,7 +2052,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="44,3187,55,19" Id="JQCp1V1JLEALHqfNFfv5TE">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="Test.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Skeleton test patch.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="MyScene" />
             </p:NodeReference>
@@ -2371,7 +2371,7 @@
                 <Pin Id="N7CVRIKbIr8OgoRDvP206r" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="8,2942,71,19" Id="OuwtVJv0hsoLILkkupXCqs">
-                <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="Test.vl">
+                <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Skeleton test patch.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="CustomAxis" />
                 </p:NodeReference>
@@ -2655,7 +2655,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="498,2852,123,19" Id="TGFW7NMCXtzM6FpJhrvuYy">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="Test.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Skeleton test patch.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="NuitrackJointDebugInfo" />
             </p:NodeReference>
@@ -2668,7 +2668,7 @@
             <Pin Id="HqP6Z9v12zoNrXRo73ENHz" Name="Transform" Kind="OutputPin" />
           </Node>
           <Node Bounds="767,2850,112,19" Id="BBFSkQ9npALOn3LmX12dLE">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="Test.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Skeleton test patch.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="ModelJointDebugInfo" />
             </p:NodeReference>
@@ -2735,7 +2735,7 @@
                 <Pin Id="RwN6r3PsoNVP8SXcpDP4KP" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="-145,2940,71,19" Id="R2p0cNQdzc3NdTMQVLjlvF">
-                <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="Test.vl">
+                <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Skeleton test patch.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="CustomAxis" />
                 </p:NodeReference>
@@ -3128,6 +3128,6 @@
   <NugetDependency Id="NMCeKbcUkzZOgH8GTdmVqv" Location="VL.Stride.Runtime" Version="2022.5.0-0361-g5c9f2d57f7" />
   <NugetDependency Id="OKMTTSTfdOwOi3bNvLMEHX" Location="VL.Stride.Windows" Version="2022.5.0-0361-g5c9f2d57f7" />
   <PlatformDependency Id="NlCCVbgYijrPudeiCDCY3Y" Location="../../../../../Program Files/vvvv/vvvv_gamma_2021.4.11-1154-g6d671f7ef2/lib/Stride.Rendering.dll" />
-  <DocumentDependency Id="EMqNjcXhabyNq9iVPnQqf0" Location="../Stride_Skeleton_Proj/VL/StrideBoneTransformingUtil2.vl" />
   <NugetDependency Id="PYwl3cxOfitOxbpZdsYN84" Location="VL.Devices.Nuitrack" Version="1.2.1" />
+  <DocumentDependency Id="UeuPpwoqwXLO5kCcfA5c0r" Location="./vl/StrideBoneTransformingUtil2.vl" />
 </Document>
