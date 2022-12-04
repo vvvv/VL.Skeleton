@@ -1,0 +1,19 @@
+!Animation
+Id: 22ade051-6e77-4acf-b93c-7502b0dd0ed4
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../RawAssets/KinectSkeletonBasic/AnimationV2.fbx
+ClipDuration:
+    Enabled: false
+    StartAnimationTime: 0:00:00:00.0000000
+    EndAnimationTime: 0:00:30:00.0000000
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+RepeatMode: LoopInfinite
+Type: !StandardAnimationAssetType {}
+Skeleton: 3e5bdd2d-ea3a-4208-ba43-9b5857ce29e3:Animations/AnimationV2 Skeleton
+RootMotion: false
+PreviewModel: 443f38b4-02a0-44ff-9a94-3ea7356ca5f3:Animations/AnimationV2
+AnimationTimeMinimum: 0:00:00:00.0000000
+AnimationTimeMaximum: 0:00:00:20.3600000
+~SourceHashes:
+    8bff916c1ea4b2d43dd3fbb97899ea20~../RawAssets/KinectSkeletonBasic/AnimationV2.fbx: 7fe40f6e27d9a649d6a2682b634641fb

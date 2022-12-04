@@ -1,0 +1,19 @@
+!Animation
+Id: cce67c6d-a7ea-4c56-86b2-e4281a0d5e25
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Assets/Walking.dae
+ClipDuration:
+    Enabled: false
+    StartAnimationTime: 0:00:00:00.0000000
+    EndAnimationTime: 0:00:30:00.0000000
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+RepeatMode: LoopInfinite
+Type: !StandardAnimationAssetType {}
+Skeleton: 8fcee06e-0ac8-4801-9f92-05aadd09c6f8:Model/Walking Skeleton
+RootMotion: false
+PreviewModel: e7c2b968-b3b2-4323-a1b1-afb44ba41cb6:Model/Walking
+AnimationTimeMinimum: 0:00:00:00.0000000
+AnimationTimeMaximum: 0:00:00:01.0333300
+~SourceHashes:
+    840f104b54531453c45b43e9159143c2~../../../../../Assets/Walking.dae: 027a40bcb58e8beb4417948183c5e985

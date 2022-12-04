@@ -1,0 +1,39 @@
+!Skeleton
+Id: 6384883c-34df-4a1a-8de0-0a0a88fe7add
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../RawAssets/KinectSkeletonBasic/StartPose.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    b3213991a5073d731409104623c0a9ef: {Name: RootNode, Depth: 0}
+    bce915fbc68a30f2c4a8ce573431cad9: {Name: Light, Depth: 1}
+    0a2892513e50e906476a33cd4bd4a95d: {Name: Camera, Depth: 1}
+    9b6e98bac2f24ad9398032fca35f3b91: {Name: Reference, Depth: 1}
+    8774b13ff94bc1107d512c2481504dbd: {Name: Hips, Depth: 2}
+    0d2b29928f5fa9f90b770ca937a286e4: {Name: LeftUpLeg, Depth: 3}
+    622397cae29b58a12cd76bcd9fe42a09: {Name: LeftLeg, Depth: 4}
+    be6bde158ca5dc3536603a23e02adc68: {Name: LeftFoot, Depth: 5}
+    a5cdebf931dfc771f04f0091beae5b0b: {Name: LeftToeBase, Depth: 6}
+    8093b7028a60b425f08cab19dd28e42b: {Name: LeftToeBase_end, Depth: 7}
+    c017ff45edaeee636dcd07da7d601ddd: {Name: RightUpLeg, Depth: 3}
+    9fdf8c56695f02be26aa76e3593cabe5: {Name: RightLeg, Depth: 4}
+    5caf9f01391bd69c7f737ae26a45ef84: {Name: RightFoot, Depth: 5}
+    5a981e1f06a4ff15bb3c079288dca30f: {Name: RightToeBase, Depth: 6}
+    4d5339332f8557e3f022e987b9079715: {Name: RightToeBase_end, Depth: 7}
+    e2f50e7619fea2b27d94e2df63738466: {Name: Spine, Depth: 3}
+    6a865f659cd6e5377363ffbdc54b271a: {Name: Neck, Depth: 4}
+    61c04935f12c72fb43f63116dc30b259: {Name: Head, Depth: 5}
+    5c2842cb44f452ee60599da8b7f07c86: {Name: Head_end, Depth: 6}
+    dd48e1314364c8cfeee0d07f260f1ba8: {Name: RightShoulder, Depth: 4}
+    3536d7bd1a58083b7b281244b407eec1: {Name: RightArm, Depth: 5}
+    6b2f6a66af860f97c9edc15accdf6ec2: {Name: RightForeArm, Depth: 6}
+    cbf7ea0b6529b3c868947a93147a8c78: {Name: RightHand, Depth: 7}
+    20ae534b2f68010830150206fa72f780: {Name: RightHand_end, Depth: 8}
+    beda24919c4c292b5e8085e23f7e0681: {Name: LeftShoulder, Depth: 4}
+    27a69f14c7683995ead5100b62670873: {Name: LeftArm, Depth: 5}
+    881f21e52a3bc2d219f32b9342036048: {Name: LeftForeArm, Depth: 6}
+    9661805418162988ac66e89e7969ee59: {Name: LeftHand, Depth: 7}
+    f3ce86356d8b16cba8079e90c0c10338: {Name: LeftHand_end, Depth: 8}
+    96a0e294197ef5760c01c55d17b50270: {Name: Reference_mesh, Depth: 1}
+~SourceHashes:
+    e2e224e054b2f5819af598d148f51dae~../RawAssets/KinectSkeletonBasic/StartPose.fbx: 6d81d789ff05b42e172b29038386d389
