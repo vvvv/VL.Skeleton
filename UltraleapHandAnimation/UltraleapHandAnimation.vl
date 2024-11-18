@@ -3827,11 +3827,6 @@
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="KpeP6nrTN5SNswDg6eEqj7" Bounds="1908,2059,181,15" ShowValueBox="true" isIOBox="true" Value="AstroBoy/AstroBoy Model">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
           <Pad Id="TxPGpq3NM6IPdSom4Ez3w4" Bounds="1650,2261,244,18" ShowValueBox="true" isIOBox="true" Value="LowPoly_Rigged_Hand_Left">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
@@ -6647,7 +6642,7 @@
             <Pin Id="QUbH6wSUfNkQDKGTKxWQKv" Name="Components" Kind="InputPin" />
             <Pin Id="GvN1V1cjwb1QCmAB9xTwjL" Name="Children" Kind="InputPin" />
             <Pin Id="LfWtolyJ1b2N19Su7rUSj6" Name="Name" Kind="InputPin" />
-            <Pin Id="Kku5KoE1oIYOORjP3RLPyk" Name="Enabled" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="Kku5KoE1oIYOORjP3RLPyk" Name="Enabled" Kind="InputPin" DefaultValue="False" />
             <Pin Id="JMD3c0RLGm9PumH9yXYnox" Name="Entity" Kind="OutputPin" />
           </Node>
           <Node Bounds="1933,2489,48,19" Id="Ig9KWQxAvlELS2LOZVtOZz">
@@ -6765,7 +6760,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NDTVhm1azc1OVFNHDTJ7qO" Comment="Enabled" Bounds="1685,2556,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="NDTVhm1azc1OVFNHDTJ7qO" Comment="Enabled" Bounds="1685,2556,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -6851,6 +6846,14 @@
             <Pin Id="E4UVt1kC1VJLYg5FOaewgm" Name="Names" Kind="OutputPin" />
             <Pin Id="HENDEUkkzWIOv5JnTywrQ9" Name="Offset Helper" Kind="OutputPin" />
           </Node>
+          <Pad Id="GzKmu7OLh6UOrBWUVrX3oE" Comment="Enabled" Bounds="2086,2619,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="Tq8vKQfPPrkNuf1H0LeMaO" Name="Create" />
         <Patch Id="ROz4ITYDVglNLQIWjJ3zgp" Name="Update" />
@@ -7371,6 +7374,7 @@
         <Link Id="BFDDoo0xni2NbmDxAGrRyt" Ids="BoqfiX3ZoP6PIxfCwDGVWE,RoeYuLWgKPELTiUSuODNiI" />
         <Link Id="IghZBnh8xSbQBGl4F4TOWD" Ids="BoqfiX3ZoP6PIxfCwDGVWE,DnzU4RKXlMIM6XPVBovmqq" />
         <Link Id="GzmTAB0l9YKQFXu5NMk9gl" Ids="BoqfiX3ZoP6PIxfCwDGVWE,H3SWUiLEpqgPNxJI6VhBt4" />
+        <Link Id="QUZVYvEeikfQWvPLCjD67C" Ids="GzKmu7OLh6UOrBWUVrX3oE,Kku5KoE1oIYOORjP3RLPyk" />
       </Patch>
     </Node>
   </Patch>
