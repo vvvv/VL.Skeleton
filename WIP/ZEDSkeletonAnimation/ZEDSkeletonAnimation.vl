@@ -928,7 +928,6 @@
             <Pin Id="PJAdS3T7ZSLK9cEdZ9efQ6" Name="Bodies" Kind="InputPin" />
             <Pin Id="Bu7lpxImCqmNQyXFNi1XcI" Name="Bones" Kind="InputPin" />
             <Pin Id="KQqaHWMsG5HMQ1OkbNdEIC" Name="Threshold" Kind="InputPin" />
-            <Pin Id="PGgZnjJ7OzgQZEuTulZ9sE" Name="Root Position" Kind="OutputPin" />
             <Pin Id="SbnaQhFCvFyOpYd5qkQqbj" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="686,1018,94,19" Id="PhhmU9oMaaNOLDs9Rgxq9t">
@@ -2102,40 +2101,6 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <ControlPoint Id="FYwuWllFwvdLsRWbE5CgAK" Bounds="793,1302" />
-                <Node Bounds="494,941,245,19" Id="TAo8eqoZjHVMAYIHADmmxA">
-                  <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessAppFlag" Name="GetSkeleton (3D)" />
-                  </p:NodeReference>
-                  <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
-                  <Pin Id="GT3W7gGxiRPQIm0B7Lgaac" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="NfyEDHjEKybOVY6NYOyBZw" Name="BodyData" Kind="InputPin" />
-                  <Pin Id="Fnd2P2qKMT0Poqnsb6xKLh" Name="Id" Kind="OutputPin" />
-                  <Pin Id="G8feGqqlJ3YNaMEH86sx2D" Name="Confidence" Kind="OutputPin" />
-                  <Pin Id="Gf9QllQZVM3PMhZ5QzLTDn" Name="Root Position" Kind="OutputPin" />
-                  <Pin Id="ULeUDPjNXZ2QJjjW8MbWfG" Name="Root Orientation" Kind="OutputPin" />
-                  <Pin Id="UgB5FsmF7xKNIB5Hu3acZ9" Name="Velocity" Kind="OutputPin" />
-                  <Pin Id="NpNGNzXePj4MWiq5pk9a7h" Name="Bounding Box" Kind="OutputPin" />
-                  <Pin Id="Om8YVxLGspOLfDR9JBOcot" Name="Dimensions" Kind="OutputPin" />
-                  <Pin Id="JW9b7h8xQoAOzwdLX3k8CN" Name="Joints Positions" Kind="OutputPin" />
-                  <Pin Id="GiCbzdg3ImHM3RTi6VY5tg" Name="Local Position" Kind="OutputPin" />
-                  <Pin Id="MO1HeVXJ1MBPJUznpz19ZO" Name="Local Orientation" Kind="OutputPin" />
-                  <Pin Id="VmjNefGisp4OFByB0MnZlU" Name="Keypoint Confidence" Kind="OutputPin" />
-                  <Pin Id="ShftlPWGAqGQBfTUb0OCws" Name="Head Position" Kind="OutputPin" />
-                  <Pin Id="CCSg91cprCOMSk3tbQYP0Y" Name="Head Bounding Box" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="501,907,80,19" Id="FBYH88nxFFQNdbxrmQhhrf">
-                  <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="FirstOrDefault" />
-                  </p:NodeReference>
-                  <Pin Id="P1Wtxy6lnfsL7a353yqteZ" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="Jo3J3Zoq7ERPj2W0Nni3j0" Name="Default Value" Kind="InputPin" />
-                  <Pin Id="JoQS8hVqFJrMqgFJ81Y83M" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="Rd9dFPIKgXhNyJ0BWzy42j" Name="Result" Kind="OutputPin" />
-                </Node>
-                <ControlPoint Id="LKlBCAh9G1yM3Alt4MiQbA" Bounds="492,875" />
-                <ControlPoint Id="O6rTNDzJ4Q5MGlp5QmDyM8" Bounds="523,1101" />
               </Canvas>
               <Patch Id="Cd0DhHsItVXLwj3YoIFWpK" Name="Create" />
               <Patch Id="N3d10WWcfjQPvs1z1zpQ2t" Name="Update">
@@ -2163,7 +2128,6 @@
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="OWsjT8HZ7k8PgaM3XUZthM" Name="Root Position" Kind="OutputPin" />
                 <Pin Id="L22roIBbMzHN6ZIHUROuul" Name="Output" Kind="OutputPin" />
               </Patch>
               <ProcessDefinition Id="LtqNseKryzWNU08gp6FiMX">
@@ -2250,13 +2214,8 @@
               <Link Id="PTNRN8enq4lORVFT2gI73H" Ids="SGEMDPWD9ZjLTDvbKlJheP,BOQ8VlkrO8BNtIEGZh499d" IsFeedback="true" />
               <Link Id="MXwv9pDBmQNM7sLaV8nq5y" Ids="Vr2BYUOasznNoGWUuLhKEF,BOQ8VlkrO8BNtIEGZh499d" />
               <Link Id="UDMdj79rJ01NF6jxhFbRSt" Ids="BOQ8VlkrO8BNtIEGZh499d,Ge4jU1MYn49LMYSGRpfOf2" />
-              <Link Id="LUTZR6zkdNdNMyZrTVPl49" Ids="VB6klWbcDUSOuklaHJwLlY,LKlBCAh9G1yM3Alt4MiQbA" IsHidden="true" />
-              <Link Id="RiaXGuT3ESqPjLxkJGkAZk" Ids="LKlBCAh9G1yM3Alt4MiQbA,P1Wtxy6lnfsL7a353yqteZ" />
-              <Link Id="EvEpzGzwK9sMiWv8KamgEJ" Ids="Rd9dFPIKgXhNyJ0BWzy42j,NfyEDHjEKybOVY6NYOyBZw" />
               <Link Id="EDI2BYYk2olNoeRYMMzq1X" Ids="UEqZGs10qWWL4oyWgvnmkm,FYwuWllFwvdLsRWbE5CgAK" />
               <Link Id="I5branyUHa4OWU06TMb2xQ" Ids="E5eVfO9k7ZkOnNvKO7id2O,ArjMd0tu7mBQO0WtDVoF40" />
-              <Link Id="IxxF0RGx6EtOz3KzQcqqLr" Ids="Gf9QllQZVM3PMhZ5QzLTDn,O6rTNDzJ4Q5MGlp5QmDyM8" />
-              <Link Id="A6tXq4He8suO5j5ftxi9Y5" Ids="O6rTNDzJ4Q5MGlp5QmDyM8,OWsjT8HZ7k8PgaM3XUZthM" IsHidden="true" />
             </Patch>
           </Node>
           <Node Bounds="291,117,325,19" Id="PK0SnxVDbthN42friWvPU2">
@@ -2357,7 +2316,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UQpnK2VznbkLGVqcEYyE5v" Comment="Enabled" Bounds="613,66,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="UQpnK2VznbkLGVqcEYyE5v" Comment="Enabled" Bounds="613,66,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -3703,7 +3662,7 @@
             <Pin Id="SGIUCp4cpGrLxRkUw8wHbu" Name="Texture Confidence Threshold" Kind="InputPin" />
             <Pin Id="E81wHvcdxoXPQychLh4Dsg" Name="Remove Saturated Areas" Kind="InputPin" />
             <Pin Id="C302ByM5Y1gNw5DXIlxSJM" Name="Enable Fill Mode" Kind="InputPin" />
-            <Pin Id="JDzSdcbHID0M3juDVYMA8Q" Name="Enabled" Kind="InputPin" />
+            <Pin Id="JDzSdcbHID0M3juDVYMA8Q" Name="Enabled" Kind="InputPin" DefaultValue="False" />
             <Pin Id="U9nplUkNdkEQBXjSV3RoXX" Name="Output" Kind="StateOutputPin" />
             <Pin Id="FbWwhmeOk01PIgQb3GDHOF" Name="Opening Error Code" Kind="OutputPin" />
             <Pin Id="IfGye89u02GMWaf8T8XtV2" Name="In Progress" Kind="OutputPin" />
@@ -4109,8 +4068,6 @@
         <Link Id="DaSI2NihCRsPyNaWc7mAyQ" Ids="MRLqLx6eXGvPEEZC76RFNd,IVR66XP4RuXL8mj2C4WYzk" />
         <Link Id="JwcPaQsrZGBPmwi4ikF468" Ids="Sx7TpTeMcUdPI7Ti3a1RZv,MnF6236NcYuPu4mXeeOabF" />
         <Link Id="J7JvrvVJG0tM7U1ouAxtdD" Ids="F9Ku2I5gLATNVHHT3Uh7xh,PJAdS3T7ZSLK9cEdZ9efQ6" />
-        <Link Id="IgX8HP1xxw1QQLEFukXms7" Ids="U9nplUkNdkEQBXjSV3RoXX,MOXS85UQIzvPf1vPNEIW2o" />
-        <Link Id="JDyJwUDWPjVLH1kuV1F7Uz" Ids="U9nplUkNdkEQBXjSV3RoXX,Ljl5wBPIPECPoeDhcgr4Gk" />
         <Link Id="Jk4ALivB7D3NwBQw4GRDLs" Ids="RFNOF8ae5tLPIZt7my4QA2,ReiBriOTJs7M12EWw1LxBh" />
         <Link Id="ToYI2mgxxFYPgKtGs99PgH" Ids="QZxtZOoUlkiMcKB9Lby6Pu,F6IRB1b5JpyNOWvYjSbJwQ" />
         <Link Id="SiqYg6sZUZtO6TsCO1EafQ" Ids="KVIoxUmHqbuOOXevoI9nJ5,ULcF29WfLiWQGl76zX2JNd" />
@@ -4119,6 +4076,8 @@
         <Link Id="MZEBS4CleP2MhVq4d8uizs" Ids="HUiIiYdxBe4OplFc7BvDRx,QWAj2P5Aft6NmQ5ZACp3by" />
         <Link Id="NY8NxRn4zZgPq21AO2SBxc" Ids="QZxtZOoUlkiMcKB9Lby6Pu,PqqDt9pVqnhLfYdIvOcDO6" />
         <Link Id="CxntLj2UQWZQO5Jf6upNKf" Ids="DzVbfV6RlIGLBCyYIMAsMM,NJ8rbRCNz4OPZQER2MAwBj" />
+        <Link Id="QB60RnyETjaNxtrL5gm5d4" Ids="RzigvTj5lk4N5k2Y6dN7Bs,Ljl5wBPIPECPoeDhcgr4Gk" />
+        <Link Id="FNE6sqkpEjMOoAEt4ow31H" Ids="RzigvTj5lk4N5k2Y6dN7Bs,MOXS85UQIzvPf1vPNEIW2o" />
       </Patch>
     </Node>
   </Patch>
