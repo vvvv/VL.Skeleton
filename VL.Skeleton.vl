@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="A4FDAJsUcFoMqDeGuE54N2" LanguageVersion="2025.7.0-0359-gbbb0444d86" Version="0.128">
-  <NugetDependency Id="QJRCmmce1H3NfeYtBQ0nm4" Location="VL.CoreLib" Version="2025.7.0-0359-gbbb0444d86" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="A4FDAJsUcFoMqDeGuE54N2" LanguageVersion="2025.7.0-0369-g117540fa59" Version="0.128">
+  <NugetDependency Id="QJRCmmce1H3NfeYtBQ0nm4" Location="VL.CoreLib" Version="2025.7.0-0369-g117540fa59" />
   <Patch Id="UpJCaaGiVejNVpU5zLtSF0">
     <Canvas Id="MeaGI6bXyb9NsErBOedqoG" DefaultCategory="Skeleton" CanvasType="FullCategory">
       <!--
@@ -2397,9 +2397,9 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="FkZts8jOIadQDqyUX8gzDj" Name="Rigged Model Entity" Kind="InputPin" />
-            <Pin Id="NlBrtvvT3uXPLknqtxVEJE" Name="Mapping Names" Kind="InputPin" />
+            <Pin Id="NlBrtvvT3uXPLknqtxVEJE" Name="Model Joint Names" Kind="InputPin" />
             <Pin Id="OgBRlESGtBtPNEfbRy9wEH" Name="Update" Kind="InputPin" />
-            <Pin Id="VNrS3CsJrGqOo9fnjeuB7j" Name="Names" Kind="OutputPin" />
+            <Pin Id="VNrS3CsJrGqOo9fnjeuB7j" Name="Model Joint Names" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="Cx0HaKK6tIMNQVIfXdsGXD">
             <Fragment Id="AmpgoafBamKL0StRvHJXKx" Patch="JM3dyrbtTImPLcgzAhQPkY" Enabled="true" />
@@ -3328,7 +3328,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JtSj17ruLKSMM7xiLoOJ70" Location="VL.Stride.Runtime" Version="2025.7.0-0359-gbbb0444d86" />
+  <NugetDependency Id="JtSj17ruLKSMM7xiLoOJ70" Location="VL.Stride.Runtime" Version="2025.7.0-0369-g117540fa59" />
   <PlatformDependency Id="JkPAvU8UarSQZAFlJTAq4H" Location="C:/Program Files/vvvv/vvvv_gamma_2021.4.11-1154-g6d671f7ef2/lib/Stride.Rendering.dll" />
-  <NugetDependency Id="UWErIrxlcDVOo8xsBSjq8V" Location="VL.Skia" Version="2025.7.0-0359-gbbb0444d86" />
+  <NugetDependency Id="UWErIrxlcDVOo8xsBSjq8V" Location="VL.Skia" Version="2025.7.0-0369-g117540fa59" />
 </Document>
