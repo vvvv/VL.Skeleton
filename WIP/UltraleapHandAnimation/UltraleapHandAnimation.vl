@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="NMy3HEX7p29P2WNh6JDZjL" LanguageVersion="2025.7.0-0018-gcc09023ca3" Version="0.128">
-  <NugetDependency Id="ReKkiaX6YtgPDaZ6uNFni3" Location="VL.CoreLib" Version="2025.7.0-0018-gcc09023ca3" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="NMy3HEX7p29P2WNh6JDZjL" LanguageVersion="2025.7.0-0369-g117540fa59" Version="0.128">
+  <NugetDependency Id="ReKkiaX6YtgPDaZ6uNFni3" Location="VL.CoreLib" Version="2025.7.0-0369-g117540fa59" />
   <Patch Id="NHg5NVa32adL18Mo9Az8ZW">
     <Canvas Id="MGL9rOTfYRMMapym9ZgI5D" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -26,6 +26,8 @@
             <Pin Id="IkXSXkkLPYVLf8WgOmF75S" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="K6jqjsoM114P31sH0bMcIl" Name="Supports Multiple Devices" Kind="InputPin" IsHidden="true" />
             <Pin Id="LkpDcpA7tEbLhQWEqutMAN" Name="Tracking Mode" Kind="InputPin" />
+            <Pin Id="U61tfyb66awO246nj8VxDf" Name="Hints" Kind="InputPin" IsHidden="true" />
+            <Pin Id="QqUegfw2NbhPfg7h1JsUQ7" Name="Request Hints" Kind="InputPin" IsHidden="true" />
             <Pin Id="QrRPbHWm2UGO2RtvRjbSWf" Name="Enabled" Kind="InputPin" />
             <Pin Id="VM6bzr3x04bOg5AMiHBJ9Y" Name="Output" Kind="OutputPin" />
             <Pin Id="NpOsIOzZjdQMCwI7U7wVfX" Name="Devices" Kind="OutputPin" />
@@ -33,6 +35,7 @@
             <Pin Id="RurukVWJzpQM9vaKYWTDtE" Name="Is Service Connected" Kind="OutputPin" />
             <Pin Id="GSkvLSUoccXNxNyRdA5RcZ" Name="Tracking Mode" Kind="OutputPin" />
             <Pin Id="S856qY7aaGSNAoxVWD7XlJ" Name="Tracking Mode Changed" Kind="OutputPin" />
+            <Pin Id="KyjWgKObedCMfD5ch1uvpN" Name="Frames" Kind="OutputPin" />
           </Node>
           <Pad Id="U4LDcDsSYbNODxnG2xNlUl" Comment="Is Connected" Bounds="603,419,40,19" ShowValueBox="true" isIOBox="true" />
           <Pad Id="SWKbD2s9pV7LwbrdMuCTQh" Comment="Is Service Connected" Bounds="655,382,40,19" ShowValueBox="true" isIOBox="true" />
@@ -226,6 +229,7 @@
             <Pin Id="OVhcezv7MszNXb3OgO8skk" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="VGwWzkB5s56NZpIGAQg9FD" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="Cn2iP7Lnn04QcIAyxmh4Jd" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
+            <Pin Id="V2lzy6siuZTMdtIMkSAFZZ" Name="Input Priority" Kind="InputPin" IsHidden="true" />
             <Pin Id="NBTeLMeCNxlM4YHlU2q85G" Name="Input" Kind="InputPin" />
             <Pin Id="EemabxSCsL9QdeX0M30ddQ" Name="Camera" Kind="InputPin" />
             <Pin Id="VGkrYm5GWgVPQyFJOBNjku" Name="Enable Default Camera" Kind="InputPin" />
@@ -253,6 +257,7 @@
             <Pin Id="RsE1NjLVWSsLNYLgbCcPSM" Name="Bind Depth As Resource During Transparent Rendering" Kind="InputPin" IsHidden="true" />
             <Pin Id="MgOe2N15DT1OLaeVvufqTo" Name="Back Buffer" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Du591YirzxYPCfwg9GOlYQ" Name="Depth Buffer" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="LcwpM1AvcF5QIqGkrGYXIq" Name="Present Call Intercept" Kind="InputPin" IsHidden="true" />
           </Node>
           <Node Bounds="478,3651,215,19" Id="R3gTnjcLRf7OKDjjRZQj3k">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
@@ -332,6 +337,7 @@
             <Pin Id="JyBIOEdBnDsMZUcxV381ET" Name="Frustum" Kind="OutputPin" />
             <Pin Id="BbnTkTogMF8OfHnckU7DcB" Name="Inverse View" Kind="OutputPin" />
             <Pin Id="IYerU0GOP6QQbIefkiEwCC" Name="Camera Component" Kind="OutputPin" />
+            <Pin Id="RsdznLMMv28MLmQUd4I6Lx" Name="Interest" Kind="OutputPin" />
           </Node>
           <Pad Id="EjYYaBX492qMXoxMVpSrf2" Comment="Initial Distance" Bounds="702,2451,35,15" ShowValueBox="true" isIOBox="true" Value="-0.9">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -512,6 +518,7 @@
             <Pin Id="IcmHysEiCfJLzs11k8B3wx" Name="Children" Kind="InputPin" />
             <Pin Id="LrYSQ8BvzitOOxD3wXlxtx" Name="Name" Kind="InputPin" />
             <Pin Id="L0uzGkHaVYFMVBiJX3i3wr" Name="Enabled" Kind="InputPin" />
+            <Pin Id="GyvcNmQ6GKbOGnbhGMZaz1" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Sx7TpTeMcUdPI7Ti3a1RZv" Name="Entity" Kind="OutputPin" />
           </Node>
           <Node Bounds="307,3381,205,19" Id="JKOhELDEWX0Li880478iMg">
@@ -534,6 +541,7 @@
             <Pin Id="NiF1GzZ3OOvN32BEhE98Uc" Name="Children" Kind="InputPin" />
             <Pin Id="NV6zQ64cC7RLa4U88UVNBt" Name="Name" Kind="InputPin" />
             <Pin Id="QlBMlCk5Q32McdxLCdSUWL" Name="Enabled" Kind="InputPin" />
+            <Pin Id="Vgbu1esXpt6NWBoVkGMfdW" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="FQVjCoejuPgO24sJAVDMS9" Name="Entity" Kind="OutputPin" />
           </Node>
           <Node Bounds="1510,2681,98,19" Id="D9wfPW3IopDLYra5iKcNCO">
@@ -541,6 +549,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetModelSkeleton" />
             </p:NodeReference>
+            <Pin Id="FykZDiEnGI7LVEXt7Yq9Eq" Name="Model" Kind="InputPin" />
             <Pin Id="L3bq1cn7R4UM14TplME13F" Name="Input" Kind="InputPin" />
             <Pin Id="LS1DFTtx2gKMDwM022vvYW" Name="Skeleton" Kind="OutputPin" />
           </Node>
@@ -604,9 +613,10 @@
             <Pin Id="DOkVlBV51JbMSfnjbYMxjO" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="SoTTXbQ8pntLRSrmKxGbjQ" Name="Input" Kind="InputPin" />
             <Pin Id="KItupik3caAL0hZTAAoige" Name="Reset" Kind="InputPin" />
-            <Pin Id="Ic8FBm4FNXnNj24hNJ9wKC" Name="Nodes" Kind="OutputPin" />
-            <Pin Id="KbJbvIxupf7NrXP3oQh0tR" Name="Names" Kind="OutputPin" />
+            <Pin Id="A7prkGroG98MxNb3yGh4lU" Name="Output" Kind="OutputPin" />
+            <Pin Id="UckJjfUjeVyNAoqvDN6fYf" Name="Defenition Nodes" Kind="OutputPin" />
             <Pin Id="OaNsD56fR0nQCaQIPARWjM" Name="Node Transformations" Kind="OutputPin" />
+            <Pin Id="KbJbvIxupf7NrXP3oQh0tR" Name="Names" Kind="OutputPin" />
           </Node>
           <Pad Id="HcyN0688V9VLjiYd7M734E" Comment="Reset" Bounds="794,2558,35,35" ShowValueBox="true" isIOBox="true" Value="false">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -816,6 +826,7 @@
             <Pin Id="Bcay4PvQPWmMleAleM1y8X" Name="Children" Kind="InputPin" />
             <Pin Id="UU9X1Gcgy0pLWfNXuoVDTC" Name="Name" Kind="InputPin" />
             <Pin Id="CeqLkDpSZLZMCBxzg5Cs3A" Name="Enabled" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="R41gefp74x4PAWYtPRTUWd" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="J7rybyyvHc7PQjnrWqPIwi" Name="Entity" Kind="OutputPin" />
           </Node>
           <Pad Id="NLXVzr8yv3pO01u8LLwiNY" Comment="Size" Bounds="302,3046,35,43" ShowValueBox="true" isIOBox="true" Value="0.06, 0.06, 0.06">
@@ -853,6 +864,7 @@
             <Pin Id="Mouvn0SIFCWM6Mxr057HL2" Name="Component" Kind="InputPin" />
             <Pin Id="AHI6RIjxiooL1JcprChGyM" Name="Name" Kind="InputPin" />
             <Pin Id="DKt1E6YHudFLxneiRziL1E" Name="Enabled" Kind="InputPin" />
+            <Pin Id="OfuQlUDmJecL9VateLKX2o" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="JLBnLmksVrsPB5PKc8LtGp" Name="Entity" Kind="OutputPin" />
           </Node>
           <Pad Id="Csf3bwuKq48Moa4oYbmINM" Comment="Color" Bounds="374,3462,136,15" ShowValueBox="true" isIOBox="true" Value="0.040000036, 0.040000036, 0.040000036, 1">
@@ -3404,6 +3416,7 @@
             <Pin Id="A5vRS7EMyECNwswSw03X3o" Name="Roughness" Kind="InputPin" />
             <Pin Id="F3nCxmvvCiHMr3RLL0WKQm" Name="Transparency" Kind="InputPin" />
             <Pin Id="GryrOfwpgQKO7aX3hKchaL" Name="Cull Mode" Kind="InputPin" />
+            <Pin Id="GdSPgaPpg1EMxhiHR0cRtX" Name="State Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="BIq4f68OXx8Ou3yDlkNYCE" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="3237,4461,39,19" Id="TU55Ly9zBUwLXUiw4IPKUH">
@@ -3422,12 +3435,15 @@
             </p:NodeReference>
             <Pin Id="PHapabdcgJGPcp5W0AUDSr" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Gu74t7rC8DgL7KMres96zs" Name="Skeleton Root" Kind="InputPin" />
+            <Pin Id="PB79bcrjxEyOwsh3iy7JmQ" Name="Rigged Model Entity" Kind="InputPin" />
+            <Pin Id="IHHHt7FydsNNYY9Q2jsDSh" Name="Model Joint Names" Kind="InputPin" />
+            <Pin Id="MZmsG3ZDSYRNVH1dvc2Ke2" Name="Update" Kind="InputPin" />
+            <Pin Id="JObSHGfyYW7PvbV8wHV4p4" Name="Model Joint Names" Kind="OutputPin" />
+            <Pin Id="U0nfm5KKDpbNxcWz729dWb" Name="Names" Kind="OutputPin" />
+            <Pin Id="E3quXIjZVX2PvuhubFgdVI" Name="Offset Helper" Kind="OutputPin" />
             <Pin Id="BhkmnsEvn4NNGyb0t80gsK" Name="Riged Model Entity" Kind="InputPin" />
             <Pin Id="EQPaKCuVq6UMqXIJqIAWiK" Name="Rotation Offset" Kind="InputPin" />
             <Pin Id="G3OFldnLc0PLCKOxWpkoVm" Name="Ajust Rotation" Kind="InputPin" />
-            <Pin Id="MZmsG3ZDSYRNVH1dvc2Ke2" Name="Update" Kind="InputPin" />
-            <Pin Id="U0nfm5KKDpbNxcWz729dWb" Name="Names" Kind="OutputPin" />
-            <Pin Id="E3quXIjZVX2PvuhubFgdVI" Name="Offset Helper" Kind="OutputPin" />
           </Node>
           <Node Bounds="1915,2668,145,19" Id="FY3TMNZYbArL3KMpPOjm7e">
             <p:NodeReference LastCategoryFullName="Stride.Models" LastDependency="VL.Stride.Engine.vl">
@@ -3443,6 +3459,7 @@
             <Pin Id="GvN1V1cjwb1QCmAB9xTwjL" Name="Children" Kind="InputPin" />
             <Pin Id="LfWtolyJ1b2N19Su7rUSj6" Name="Name" Kind="InputPin" />
             <Pin Id="Kku5KoE1oIYOORjP3RLPyk" Name="Enabled" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="Nnic3JhOODbP2D5du3cu8H" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="JMD3c0RLGm9PumH9yXYnox" Name="Entity" Kind="OutputPin" />
           </Node>
           <Node Bounds="1957,2589,85,19" Id="RdQqIhB8YL0QbW2yfm4Voa">
@@ -3456,6 +3473,7 @@
             <Pin Id="AEZRPmJFJNUP4TNDEk9rBf" Name="Roughness" Kind="InputPin" />
             <Pin Id="KdZum4PtUYgPAmFvSE0dJs" Name="Transparency" Kind="InputPin" />
             <Pin Id="HIor9RhXxztMiRt6lr8XzA" Name="Cull Mode" Kind="InputPin" />
+            <Pin Id="NV9tVKw5lxjNfe7zg8hM4f" Name="State Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Nt13mjtnrq5OhBUYABn1tq" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="PDPuzjMAKABLxlRobdcyL1" Comment="Rotation Offset" Bounds="3016,4355,35,43" ShowValueBox="true" isIOBox="true" Value="0, -0.25, -0.5">
@@ -3598,12 +3616,15 @@
             </p:NodeReference>
             <Pin Id="VKeSHbtkRpJNyTdTNtcrgK" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="JM5EqZrIAvaPYyGgDx4b23" Name="Skeleton Root" Kind="InputPin" />
+            <Pin Id="VPsyutSkzGuPxwlr78wFo8" Name="Rigged Model Entity" Kind="InputPin" />
+            <Pin Id="ALvh1gCtw6DMrNRbldzbVQ" Name="Model Joint Names" Kind="InputPin" />
+            <Pin Id="TLvNAPDalbqN7GxxkrAfra" Name="Update" Kind="InputPin" />
+            <Pin Id="MSCFoFCKInCNB9w2mpWmBt" Name="Model Joint Names" Kind="OutputPin" />
+            <Pin Id="E4UVt1kC1VJLYg5FOaewgm" Name="Names" Kind="OutputPin" />
+            <Pin Id="HENDEUkkzWIOv5JnTywrQ9" Name="Offset Helper" Kind="OutputPin" />
             <Pin Id="MSpH5drhoorPXEWgjApyVB" Name="Riged Model Entity" Kind="InputPin" />
             <Pin Id="OxcgGWeIgmsL8ELqDYBSfp" Name="Rotation Offset" Kind="InputPin" />
             <Pin Id="Q5JFojhptK8P1I83mzv2Ra" Name="Ajust Rotation" Kind="InputPin" />
-            <Pin Id="TLvNAPDalbqN7GxxkrAfra" Name="Update" Kind="InputPin" />
-            <Pin Id="E4UVt1kC1VJLYg5FOaewgm" Name="Names" Kind="OutputPin" />
-            <Pin Id="HENDEUkkzWIOv5JnTywrQ9" Name="Offset Helper" Kind="OutputPin" />
           </Node>
           <Pad Id="GzKmu7OLh6UOrBWUVrX3oE" Comment="Enabled" Bounds="2086,2619,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -3654,6 +3675,15 @@
             <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CTmEffmv2CrQMXKXEcweeS" Bounds="1624,1460,510,801" ShowValueBox="true" isIOBox="true" Value="LeapTransform _basis = new LeapTransform(Vector3.One, Quaternion.Identity);&#xD;&#xA;&#xD;&#xA;/// &lt;summary&gt;&#xD;&#xA;/// The orthonormal basis vectors for this Bone as a Matrix.&#xD;&#xA;/// The orientation of this Bone as a Quaternion.&#xD;&#xA;/// &#xD;&#xA;/// Basis vectors specify the orientation of a bone.&#xD;&#xA;/// &#xD;&#xA;/// **xBasis** Perpendicular to the longitudinal axis of the&#xD;&#xA;///   bone; exits the sides of the finger.&#xD;&#xA;/// &#xD;&#xA;/// **yBasis or up vector** Perpendicular to the longitudinal&#xD;&#xA;///   axis of the bone; exits the top and bottom of the finger. More positive&#xD;&#xA;///   in the upward direction.&#xD;&#xA;/// &#xD;&#xA;/// **zBasis** Aligned with the longitudinal axis of the bone.&#xD;&#xA;///   More positive toward the base of the finger.&#xD;&#xA;/// &#xD;&#xA;/// The bases provided for the right hand use the right-hand rule; those for&#xD;&#xA;/// the left hand use the left-hand rule. Thus, the positive direction of the&#xD;&#xA;/// x-basis is to the right for the right hand and to the left for the left&#xD;&#xA;/// hand. You can change from right-hand to left-hand rule by multiplying the&#xD;&#xA;/// z basis vector by -1.&#xD;&#xA;/// &#xD;&#xA;/// You can use the basis vectors for such purposes as measuring complex&#xD;&#xA;/// finger poses and skeletal animation.&#xD;&#xA;/// &#xD;&#xA;/// Note that converting the basis vectors directly into a quaternion&#xD;&#xA;/// representation is not mathematically valid. If you use quaternions,&#xD;&#xA;/// create them from the derived rotation matrix not directly from the bases.&#xD;&#xA;/// &#xD;&#xA;/// @since 2.0&#xD;&#xA;/// &lt;/summary&gt;&#xD;&#xA;public LeapTransform Basis&#xD;&#xA;{&#xD;&#xA;    get&#xD;&#xA;    {&#xD;&#xA;        _basis.translation = PrevJoint;&#xD;&#xA;        _basis.rotation = Rotation;&#xD;&#xA;&#xD;&#xA;        return _basis;&#xD;&#xA;    }&#xD;&#xA;}">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="Tq8vKQfPPrkNuf1H0LeMaO" Name="Create" />
@@ -4154,9 +4184,9 @@
     </Node>
   </Patch>
   <NugetDependency Id="ApWgc1CmjzRPgvIer2oijL" Location="VL.Devices.Ultraleap" Version="0.0.0" />
-  <NugetDependency Id="Ce7XnfAz5v9OY5kUrgWjOH" Location="VL.Stride" Version="2025.7.0-0018-gcc09023ca3" />
-  <NugetDependency Id="JsgzTCqypOsLQl4MrGw9MM" Location="VL.Stride.Runtime" Version="2025.7.0-0018-gcc09023ca3" />
+  <NugetDependency Id="Ce7XnfAz5v9OY5kUrgWjOH" Location="VL.Stride" Version="2025.7.0-0369-g117540fa59" />
+  <NugetDependency Id="JsgzTCqypOsLQl4MrGw9MM" Location="VL.Stride.Runtime" Version="2025.7.0-0369-g117540fa59" />
   <PlatformDependency Id="A0m3NKLwTaGP4FfryspfQ4" Location="C:/Program Files/vvvv/vvvv_gamma_2021.4.11-1154-g6d671f7ef2/lib/Stride.Rendering.dll" />
-  <NugetDependency Id="HVSOa8y2RjaLj0LhJwWB0b" Location="VL.Skia" Version="2025.7.0-0018-gcc09023ca3" />
+  <NugetDependency Id="HVSOa8y2RjaLj0LhJwWB0b" Location="VL.Skia" Version="2025.7.0-0369-g117540fa59" />
   <NugetDependency Id="IwysWEYDRbKNP4oKVmK1SF" Location="VL.Skeleton" Version="0.0.0" />
 </Document>
