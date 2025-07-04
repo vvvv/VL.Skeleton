@@ -1,8 +1,0 @@
-!Texture
-Id: e24eb8dd-4d44-4557-baf4-3d68033a5bd6
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file Models/sourceimages/eye_iris_R_00.tga
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
-    PremultiplyAlpha: false

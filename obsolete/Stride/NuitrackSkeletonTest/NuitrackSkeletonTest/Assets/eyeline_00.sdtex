@@ -1,8 +1,0 @@
-!Texture
-Id: 25166319-270d-4abb-b8cb-59f0c24f1fb7
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file Models/sourceimages/eyeline_00.tga
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
-    PremultiplyAlpha: false

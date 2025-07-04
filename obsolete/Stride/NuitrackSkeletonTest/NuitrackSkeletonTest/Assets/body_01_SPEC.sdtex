@@ -1,8 +1,0 @@
-!Texture
-Id: ccda5513-6401-4c1e-aa96-69074065f192
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file Models/sourceimages/body_01_SPEC.tga
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
-    PremultiplyAlpha: false
