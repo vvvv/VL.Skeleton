@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.Skeleton</id>
+    <version>0.0.1-alpha</version>
+    <title>VL.Skeleton</title>
+    <authors>vvvv</authors>
+    <owners>vvvv</owners>
+    <projectUrl>https://github.com/vvvv/VL.Skeleton</projectUrl>
+    <repository type="git" url="https://github.com/vvvv/VL.Skeleton.git" />
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Skeletons for vvvv</description>
+    <tags></tags>
+    <license type="expression">LGPL-3.0-only</license>
+    <icon>icon\nugeticon.png</icon>
+    <readme>docs\README.md</readme>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+	<file src="nugeticon.png" target="icon\" />
+	<file src="..\README.md" target="docs\" />
+  </files>
+</package>
