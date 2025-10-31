@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="A4FDAJsUcFoMqDeGuE54N2" LanguageVersion="2025.7.0-0413-g101b9a7a4c" Version="0.128">
-  <NugetDependency Id="QJRCmmce1H3NfeYtBQ0nm4" Location="VL.CoreLib" Version="2025.7.0-0413-g101b9a7a4c" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="A4FDAJsUcFoMqDeGuE54N2" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="QJRCmmce1H3NfeYtBQ0nm4" Location="VL.CoreLib" Version="2025.7.0" />
   <Patch Id="UpJCaaGiVejNVpU5zLtSF0">
     <Canvas Id="MeaGI6bXyb9NsErBOedqoG" DefaultCategory="Skeleton" CanvasType="FullCategory">
       <!--
@@ -361,6 +361,32 @@
                 </Node>
               </Patch>
             </Node>
+            <Node Bounds="257,860,136,87" Id="GkSbdlQZsZwMaJwZGhisOo">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+              </p:NodeReference>
+              <Pin Id="Hu0QXVIbfMbLrCja6k7zGi" Name="Break" Kind="OutputPin" />
+              <Patch Id="Bnc8xR6xnm5MJHlMQW4l6C" ManuallySortedPins="true">
+                <Patch Id="Vv4El1nx7LwQYAoknNAuid" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="R92ElgDD7tfP0UZyyqkTI9" Name="Update" ManuallySortedPins="true" />
+                <Patch Id="B2QRAPdtwWoNg8y33n1uAO" Name="Dispose" ManuallySortedPins="true" />
+                <Node Bounds="269,889,112,26" Id="VO9nLjdGY3ZNEx97GtoW8C">
+                  <p:NodeReference LastCategoryFullName="Stride.Rendering.ModelNodeTransformation" LastDependency="Stride.Rendering.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ModelNodeTransformation" />
+                    <Choice Kind="OperationCallFlag" Name="WorldMatrix" />
+                  </p:NodeReference>
+                  <Pin Id="SZRXj04cEcJOoS68MePxNF" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="McWyke7Ysu9PhNWdghmHoy" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="CNb9crShvRuQVQ0ikbxkZb" Name="World Matrix" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="UM3PvBQbIs1LHl615AZjA9" Bounds="271,866" Alignment="Top" />
+              <ControlPoint Id="PEsOu3qKu0NPrmXy1y78MO" Bounds="275,941" Alignment="Bottom" />
+            </Node>
+            <ControlPoint Id="FYXrGqWVUB9LQ4mmQn4CyQ" Bounds="275,981" />
           </Canvas>
           <Patch Id="JM3dyrbtTImPLcgzAhQPkY" Name="Create" />
           <Patch Id="Lcgjoy4IjyhL69FAFwSCHt" Name="Update" ManuallySortedPins="true">
@@ -376,6 +402,7 @@
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="VLGYs6bVYt0PBE85ncVNac" Name="Joint Transformations" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="Cx0HaKK6tIMNQVIfXdsGXD">
             <Fragment Id="AmpgoafBamKL0StRvHJXKx" Patch="JM3dyrbtTImPLcgzAhQPkY" Enabled="true" />
@@ -443,6 +470,11 @@
           <Link Id="UFhCSgeo3BRNg0zJu7g2dZ" Ids="PyJiXdDvd93LFbulBx1qB4,Th9ZXrWFTYPPSKsTkJlraG" />
           <Link Id="J3IVihN9SycLZf1dkY1A2z" Ids="PyJiXdDvd93LFbulBx1qB4,Cn9p47fQsY1MnEqimMljeF" />
           <Link Id="AGIVOtD1WANMIF92BfA2aN" Ids="PyJiXdDvd93LFbulBx1qB4,G7KFPJKGF0HMtWzVNWd6vn" />
+          <Link Id="NXIhbuyYjUFOOy6x6nYYVP" Ids="M2x4uobXCgLMcfGWJO3pgn,UM3PvBQbIs1LHl615AZjA9" />
+          <Link Id="LVeWpz5XVRcOeuakObGlkr" Ids="UM3PvBQbIs1LHl615AZjA9,SZRXj04cEcJOoS68MePxNF" />
+          <Link Id="Q7r3VhV5JYnQYzGhGHYhgM" Ids="PEsOu3qKu0NPrmXy1y78MO,FYXrGqWVUB9LQ4mmQn4CyQ" />
+          <Link Id="Flt7rxnYedBMOdjpY2cKsm" Ids="FYXrGqWVUB9LQ4mmQn4CyQ,VLGYs6bVYt0PBE85ncVNac" IsHidden="true" />
+          <Link Id="DxoJbxAA7ykOpDvwgwbnTY" Ids="CNb9crShvRuQVQ0ikbxkZb,PEsOu3qKu0NPrmXy1y78MO" />
         </Patch>
       </Node>
       <Canvas Id="Or6kcjWuZFlNO5AVOVwayq" Name="Experimental" Position="167,210">
@@ -1050,6 +1082,17 @@
                       </Node>
                     </Patch>
                   </Node>
+                  <Node Bounds="651,501,87,26" Id="Hb0D7mG2ZC8NPLLUTnJs23">
+                    <p:NodeReference LastCategoryFullName="Stride.Rendering.SkeletonUpdater" LastDependency="Stride.Rendering.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <FullNameCategoryReference ID="Stride.Rendering.SkeletonUpdater" />
+                      <Choice Kind="OperationCallFlag" Name="GetWorldMatrix" />
+                    </p:NodeReference>
+                    <Pin Id="RVRJ49kKSZoPYQCSuEsJRg" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="JZAkop6VskIMvClEfB7Jz1" Name="Index" Kind="InputPin" DefaultValue="3" />
+                    <Pin Id="BABBJWll42lOTCguLSjiUS" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="AVa3Mt9KneNL18WzRdjugD" Name="Matrix" Kind="OutputPin" />
+                  </Node>
                 </Patch>
                 <ControlPoint Id="NhV5s0XTSVYOYm1FG3xJup" Bounds="491,721" Alignment="Bottom" />
                 <ControlPoint Id="VRAPBY8HpqyPG43AqKcfZ4" Bounds="481,351" Alignment="Top" />
@@ -1157,6 +1200,7 @@
             <Link Id="J7DKBjAgt0bMixc3K9XuJB" Ids="DSU22jhsQ6mLXnk414vx6V,QL4KbGwEpsgLDKLTig2ZGG" />
             <Link Id="BDCjlEzGjGEOSz13H321wB" Ids="QPDTvkatnbvO94UjZZUJrH,NhV5s0XTSVYOYm1FG3xJup" />
             <Link Id="AU8ImKEW4S3L3pXADW7ABw" Ids="RmHseqvMetXPPo1jkMHvNa,AvuwMdDxLVBOYrqfXg2L0j" />
+            <Link Id="E1ZDgh35uzmLY7F2TM0X05" Ids="FRyv96IsgExLBcyjEpwen6,RVRJ49kKSZoPYQCSuEsJRg" />
           </Patch>
         </Node>
         <!--
@@ -2900,14 +2944,9 @@
                 <Pin Id="GLnzjdm3MDdMfaS7MOpwfo" Name="Enabled" Kind="InputPin" DefaultValue="True" />
                 <Pin Id="HzAY4q4ZMK0OrMxLCmml9q" Name="Output" Kind="OutputPin" />
               </Node>
-              <Pad Id="SVZ5sjQuAGqL8MLKevTyyF" Comment="Render Stage" Bounds="497,953,140,15" ShowValueBox="true" isIOBox="true" Value="AfterScene">
+              <Pad Id="SVZ5sjQuAGqL8MLKevTyyF" Comment="Render Stage" Bounds="497,953,141,15" ShowValueBox="true" isIOBox="true" Value="AfterScene">
                 <p:TypeAnnotation LastCategoryFullName="VL.Stride.Rendering" LastDependency="VL.Stride.vl">
                   <Choice Kind="TypeFlag" Name="DrawerRenderStage" />
-                </p:TypeAnnotation>
-              </Pad>
-              <Pad Id="P7hcqqW4qscNSVtV7eeO94" Comment="Space" Bounds="610,900,85,15" ShowValueBox="true" isIOBox="true" Value="DIPTopLeft">
-                <p:TypeAnnotation LastCategoryFullName="VL.Skia" LastDependency="VL.Stride.vl">
-                  <Choice Kind="TypeFlag" Name="CommonSpace" />
                 </p:TypeAnnotation>
               </Pad>
               <Node Bounds="470,797,45,19" Id="P1vk2L5DR3bO192tRh1Pq9">
@@ -2937,6 +2976,23 @@
                 <Pin Id="TiTDSAT7E1DPnNQUO6sb6e" Name="Output" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="TWjoyDKlm6QNzStPWjfy75" Bounds="727,689" />
+              <Node Bounds="173,821,85,19" Id="FD4vUmj0seKPSsAsavKTbg">
+                <p:NodeReference LastCategoryFullName="Stride.Models" LastDependency="VL.Stride.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Stride" />
+                  <CategoryReference Kind="Category" Name="Models" NeedsToBeDirectParent="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Text" />
+                </p:NodeReference>
+                <Pin Id="Kgxw9CVp8NoPZREtl0Vxk1" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="SenXuC9nhWTP3J1c0FMcN2" Name="Text" Kind="InputPin" />
+                <Pin Id="LeWcbbxNvOgMLYIS5kV4BC" Name="Transformation" Kind="InputPin" />
+                <Pin Id="KDP9CpKldORLXeIt3fFRVI" Name="Anchor" Kind="InputPin" />
+                <Pin Id="FOo75PLq7ZPPWH7SLcdwIi" Name="Paint" Kind="InputPin" />
+                <Pin Id="LWNaofmcFXBO1tfcovBd67" Name="Quality" Kind="InputPin" IsHidden="true" />
+                <Pin Id="R34DmrdiPTWNHJuHObijnX" Name="Safety area pixels" Kind="InputPin" IsHidden="true" />
+                <Pin Id="GTaAEUtmKpYPl95ZLteT26" Name="Enabled" Kind="InputPin" />
+                <Pin Id="Jn2woZCcaf7MG9Q5MexUS4" Name="Output" Kind="OutputPin" />
+              </Node>
             </Canvas>
             <Patch Id="ERib5gjexCOLdbrHAhEmMu" Name="Create" />
             <Patch Id="LFt7Ckd20DZMN4m3k4Gw79" Name="Update">
@@ -3006,7 +3062,6 @@
             <Link Id="MePz4QmBqwiQAkbikq2hyY" Ids="RN0YddMPo0pPkmtxJXyd9q,VW4Fssdv3U8L5cf24aAiuZ" />
             <Link Id="FaU9aw2LaP0NvJOMoqX4Oi" Ids="JmL9HllpPJvQbvWEeVpHVs,NT93qC7Vw40MkSg6OT3hbz" />
             <Link Id="JTNo2ly06IXNIyi0m4l5nI" Ids="SVZ5sjQuAGqL8MLKevTyyF,L9Q6Wh75meqNOw7c91Gr35" />
-            <Link Id="TFNzqrMg5dBOgEx3dIs8hp" Ids="P7hcqqW4qscNSVtV7eeO94,CfgIzlJ7VpnMKXpgwPOucD" />
             <Link Id="DuodTsd62LGQaRxYgwdgRK" Ids="SsxYt2wfUepN26vH8uRd4A,LZ1Q80ZSq6OLhW7IW1KccQ" />
             <Link Id="B1KLcA6muTCQczu8f2bjUF" Ids="DJjNxP1CPUPPhxYDMbQsX1,DAFEa0Q4z2kMgSRa4Qs4E7" />
             <Link Id="BHicYrYTvISLT5yUh2BI5U" Ids="DAFEa0Q4z2kMgSRa4Qs4E7,TED21VRVh0oO75F7uD2Z5z" />
@@ -4021,7 +4076,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JtSj17ruLKSMM7xiLoOJ70" Location="VL.Stride.Runtime" Version="2025.7.0-0413-g101b9a7a4c" />
   <PlatformDependency Id="JkPAvU8UarSQZAFlJTAq4H" Location="C:/Program Files/vvvv/vvvv_gamma_2021.4.11-1154-g6d671f7ef2/lib/Stride.Rendering.dll" />
-  <NugetDependency Id="UWErIrxlcDVOo8xsBSjq8V" Location="VL.Skia" Version="2025.7.0-0413-g101b9a7a4c" />
+  <NugetDependency Id="UWErIrxlcDVOo8xsBSjq8V" Location="VL.Skia" Version="2025.7.0" />
+  <NugetDependency Id="BJVohhbuR4RQILevPGJZHv" Location="VL.Stride" Version="2025.7.0" />
 </Document>
