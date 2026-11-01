@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="A4FDAJsUcFoMqDeGuE54N2" LanguageVersion="2025.7.4" Version="0.128">
-  <NugetDependency Id="QJRCmmce1H3NfeYtBQ0nm4" Location="VL.CoreLib" Version="2025.7.4" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="A4FDAJsUcFoMqDeGuE54N2" LanguageVersion="2026.8.0-0278-g8b85ba4511" Version="0.128">
+  <NugetDependency Id="QJRCmmce1H3NfeYtBQ0nm4" Location="VL.CoreLib" />
   <Patch Id="UpJCaaGiVejNVpU5zLtSF0">
     <Canvas Id="MeaGI6bXyb9NsErBOedqoG" DefaultCategory="Skeleton" CanvasType="FullCategory">
       <!--
@@ -1173,7 +1173,7 @@
               <ControlPoint Id="OrcJ81X9lyvQTj0okRZMX3" Bounds="491,768" />
               <ControlPoint Id="LLCtdfX48HVQEbjvzJffhL" Bounds="593,766" />
               <ControlPoint Id="HsLf3XFheJAOHoNDhGunCI" Bounds="764,769" />
-              <Node Bounds="250,109,187,148" Id="MHXmRRuovYBN6geSgNnV8C">
+              <Node Bounds="251,97,196,168" Id="MHXmRRuovYBN6geSgNnV8C">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -1183,17 +1183,7 @@
                 <Patch Id="LDztpuai6keOeVbj3tLazS" ManuallySortedPins="true">
                   <Patch Id="Vf6LyndaKpVPnKO8wuht3G" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="PDgw2KmuiW6LAGPoCeeiRN" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="343,194,80,26" Id="UGtw0G2g1DYNNpLfX7eezf">
-                    <p:NodeReference LastCategoryFullName="Stride.API.Engine.ModelComponent" LastDependency="VL.Stride.Runtime.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="Skeleton" />
-                      <CategoryReference Kind="ClassType" Name="ModelComponent" NeedsToBeDirectParent="true" />
-                    </p:NodeReference>
-                    <Pin Id="TYy144VswVAMuhIN1XnoFI" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="Vrwhht3S0SWL23vk3fXejc" Name="Output" Kind="StateOutputPin" />
-                    <Pin Id="HHQaHPXEqi3LQaGznqGVok" Name="Skeleton" Kind="OutputPin" />
-                  </Node>
-                  <Node Bounds="262,134,85,26" Id="LLh9kwH8TtENZx2vz2saBb">
+                  <Node Bounds="263,120,85,26" Id="LLh9kwH8TtENZx2vz2saBb">
                     <p:NodeReference LastCategoryFullName="Stride.API.Engine.Entity" LastDependency="VL.Stride.Runtime.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="GetComponent" />
@@ -1202,9 +1192,41 @@
                     <Pin Id="I2QIGJNzfhyLfVxKID5aRy" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="BvRiR5mfrIhOzHLhb5lc6t" Name="Result" Kind="OutputPin" />
                   </Node>
+                  <Node Bounds="331,159,104,86" Id="TNyIywY9LtcMO3kjNlXD5J">
+                    <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                      <CategoryReference Kind="Category" Name="Control" />
+                      <Choice Kind="ProcessAppFlag" Name="Try" />
+                    </p:NodeReference>
+                    <Pin Id="GgexnTI8nVYPdTQNeAwoTo" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                    <Pin Id="QGiqnTC17CKL3KSt5xhLN4" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
+                    <Pin Id="EfgUMiAdR2bPFe6mUveGIB" Name="Stick To Last Valid Outputs" Kind="InputPin" />
+                    <Pin Id="FVJ9KCJpPY3P2gQP2585ny" Name="Reset Region On Failure" Kind="InputPin" />
+                    <Pin Id="HYMel1kBj9fQVqeVxXJrU0" Name="Warn" Kind="InputPin" />
+                    <Pin Id="DrFoi8DkGx9MYk8JCmJ3SZ" Name="Success" Kind="OutputPin" />
+                    <Pin Id="ViGrwL1mmeoNjJGIu8PBm3" Name="Failure" Kind="OutputPin" />
+                    <Pin Id="UfSUF6HxIeAMeJVZFQdJUR" Name="Error Message" Kind="OutputPin" />
+                    <Pin Id="LGE9oMSro5WNSzNJzeZoHM" Name="Exceptions" Kind="OutputPin" />
+                    <Patch Id="GOGFltKVXHgPntSv1lzyCc" ManuallySortedPins="true">
+                      <Patch Id="KnlXml5EMRrL8Tr9wH5G2s" Name="Create" ManuallySortedPins="true" />
+                      <Patch Id="GHtDS9d9yRcPWRloFua9hT" Name="Update" ManuallySortedPins="true" />
+                      <Patch Id="K1PVnKAp7G0PBcSc8yjOJm" Name="Dispose" ManuallySortedPins="true" />
+                      <Node Bounds="343,194,80,26" Id="UGtw0G2g1DYNNpLfX7eezf">
+                        <p:NodeReference LastCategoryFullName="Stride.API.Engine.ModelComponent" LastDependency="VL.Stride.Runtime.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="Skeleton" />
+                          <CategoryReference Kind="ClassType" Name="ModelComponent" NeedsToBeDirectParent="true" />
+                        </p:NodeReference>
+                        <Pin Id="TYy144VswVAMuhIN1XnoFI" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="Vrwhht3S0SWL23vk3fXejc" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="HHQaHPXEqi3LQaGznqGVok" Name="Skeleton" Kind="OutputPin" />
+                      </Node>
+                    </Patch>
+                    <ControlPoint Id="SkBR9uU3KW8L5Q89cwtDMM" Bounds="420,239" Alignment="Bottom" />
+                  </Node>
                 </Patch>
-                <ControlPoint Id="Syonv4wUZVyLD4mgrbmF8b" Bounds="420,251" Alignment="Bottom" />
-                <ControlPoint Id="ED3bED9P9suMqPZ8gXnJ3A" Bounds="420,115" Alignment="Top" />
+                <ControlPoint Id="Syonv4wUZVyLD4mgrbmF8b" Bounds="420,259" Alignment="Bottom" />
+                <ControlPoint Id="ED3bED9P9suMqPZ8gXnJ3A" Bounds="420,103" Alignment="Top" />
               </Node>
               <Node Bounds="250,70,65,19" Id="T9T9F3iaoi7LAUbHjjiRmq">
                 <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
@@ -1247,7 +1269,6 @@
             <Link Id="QFCmEaeaLRzOrd5DQMSjpZ" Ids="HsLf3XFheJAOHoNDhGunCI,GX07nA7iogKMSKXWICHngu" IsHidden="true" />
             <Link Id="OJrAPNzehilMCLJ1qhLEoZ" Ids="BvRiR5mfrIhOzHLhb5lc6t,TYy144VswVAMuhIN1XnoFI" />
             <Link Id="UXz5uSPhsxSNURsviEZqlN" Ids="ED3bED9P9suMqPZ8gXnJ3A,Syonv4wUZVyLD4mgrbmF8b" IsFeedback="true" />
-            <Link Id="Cz6UZIQ2EXZOBbAnxv6kK9" Ids="HHQaHPXEqi3LQaGznqGVok,Syonv4wUZVyLD4mgrbmF8b" />
             <Link Id="Vzo0Sjl2CCIPFuWgz7ga7J" Ids="Syonv4wUZVyLD4mgrbmF8b,MgzyHKKuPSGNR2ttb36QJy" />
             <Link Id="MrViv2H4Ie6P142QFn22mJ" Ids="Syonv4wUZVyLD4mgrbmF8b,T73Ndy4c567MWi5yjZyYPy" />
             <Link Id="UmmF5jSf6cLMaxcwc1BWQd" Ids="ROMmPX8AU7JP06VFaXtYUh,BmMKmrIcA31MP3n1SLuoNS" />
@@ -1266,6 +1287,8 @@
             <Link Id="J7DKBjAgt0bMixc3K9XuJB" Ids="DSU22jhsQ6mLXnk414vx6V,QL4KbGwEpsgLDKLTig2ZGG" />
             <Link Id="BDCjlEzGjGEOSz13H321wB" Ids="QPDTvkatnbvO94UjZZUJrH,NhV5s0XTSVYOYm1FG3xJup" />
             <Link Id="AU8ImKEW4S3L3pXADW7ABw" Ids="RmHseqvMetXPPo1jkMHvNa,AvuwMdDxLVBOYrqfXg2L0j" />
+            <Link Id="GvGyo98dBlUM1IXMnnupLH" Ids="HHQaHPXEqi3LQaGznqGVok,SkBR9uU3KW8L5Q89cwtDMM" />
+            <Link Id="NDr1WqVO3HgLr8TstqspPm" Ids="SkBR9uU3KW8L5Q89cwtDMM,Syonv4wUZVyLD4mgrbmF8b" />
           </Patch>
         </Node>
         <!--
@@ -5410,6 +5433,6 @@
     </Node>
   </Patch>
   <PlatformDependency Id="JkPAvU8UarSQZAFlJTAq4H" Location="C:/Program Files/vvvv/vvvv_gamma_2021.4.11-1154-g6d671f7ef2/lib/Stride.Rendering.dll" />
-  <NugetDependency Id="UWErIrxlcDVOo8xsBSjq8V" Location="VL.Skia" Version="2025.7.4" />
-  <NugetDependency Id="BJVohhbuR4RQILevPGJZHv" Location="VL.Stride" Version="2025.7.4" />
+  <NugetDependency Id="UWErIrxlcDVOo8xsBSjq8V" Location="VL.Skia" />
+  <NugetDependency Id="BJVohhbuR4RQILevPGJZHv" Location="VL.Stride" />
 </Document>
